@@ -10,6 +10,7 @@ import FilePage from './pages/filePage';
 import { ToastContainer } from 'react-toastify';
 import Nav from './components/Main/nav';
 import AllWorkflows from './pages/allWorkflows';
+import NotfoundPage from './pages/notfoundPage';
 
 
 
@@ -26,6 +27,7 @@ export default function App() {
         <Route path='/workflow-canvas' element={<ProtectedRoute Component={NodeCanvas} />} />
         <Route path='/all-workflow' element={<ProtectedRoute Component={AllWorkflows} />} />
         <Route path='/file-operation' element={<ProtectedRoute Component={FilePage} />} />
+        <Route path='/*' element={<NotfoundPage/>} />
       </Routes>
       <ToastContainer/>
 
