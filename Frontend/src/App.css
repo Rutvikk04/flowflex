@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@layer components{
+    .input{
+        @apply p-2 outline-none border rounded-md bg-slate-600 text-white w-full
+    }
+    .hero-btn{
+        @apply block mx-auto px-2 py-1 bg-slate-200 hover:bg-slate-100 hover:shadow hover:shadow-white duration-200 rounded-md w-fit font-medium
+    }
+    .hero-text{
+        @apply text-3xl  mb-4 text-center font-bold text-gray-300
+    }
+}
+@tailwind utilities;
+
+
+.react-flow__edges{
+    color: green;
+}
+.react-flow__node{
+    background-color: rgb(20, 17, 15);
+    font-weight: 400;
+    color:white;
+    font-size: medium;
+    border: 2px solid white;
+    outline: none;
+    
+}
+.react-flow__node.selected{
+    background-color:rgb(11, 9, 8);
+    border: 1px solid yellow;
+   scale: 20rem;
+}
